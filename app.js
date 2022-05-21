@@ -4,9 +4,8 @@ const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 const dotenv = require('dotenv');
 dotenv.config(); 
-let port = 4755;
-const mongoLiveUrl = "mongodb+srv://Sagarbehera:Sagar456@cluster0.96hmj.mongodb.net/ZomatoData?retryWrites=true&w=majority";
-const mongoUrl = "mongodb://localhost:27017";
+let port = process.env.PORT || 4755;
+const mongoUrl = "mongodb+srv://Sagarbehera:Sagar456@cluster0.96hmj.mongodb.net/ZomatoData?retryWrites=true&w=majority";
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
